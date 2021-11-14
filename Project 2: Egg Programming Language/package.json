@@ -1,0 +1,11 @@
+{
+  "name": "egg-programming-language-jlpickert",
+  "version": "1.0.0",
+  "description": "Working through the code associated with project 2 of Marijn Haverbeke's Eloquent javascript",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "module"
+}

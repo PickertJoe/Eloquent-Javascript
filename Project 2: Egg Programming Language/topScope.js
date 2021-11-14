@@ -5,25 +5,25 @@ export default {
     console.log(value)
     return value
   },
-  "+": (a, b) => {
+  '+': (a, b) => {
     return a + b
   },
-  "-": (a, b) => {
+  '-': (a, b) => {
     return a - b
   },
-  "*": (a, b) => {
+  '*': (a, b) => {
     return a * b
   },
-  "/": (a, b) => {
+  '/': (a, b) => {
     return a / b
   },
-  "==": (a, b) => {
-    return a == b
+  '==': (a, b) => {
+    return a === b
   },
-  "<": (a, b) => {
+  '<': (a, b) => {
     return a < b
   },
-  ">": (a, b) => {
+  '>': (a, b) => {
     return a > b
   }
 }
