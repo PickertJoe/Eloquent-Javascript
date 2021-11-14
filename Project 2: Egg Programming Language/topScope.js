@@ -25,5 +25,14 @@ export default {
   },
   '>': (a, b) => {
     return a > b
+  },
+  array: (...values) => {
+    return new Array(...values)
+  },
+  length: array => {
+    return array.length
+  },
+  element: (array, n) => {
+    return array[n]
   }
 }

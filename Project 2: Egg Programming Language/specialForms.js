@@ -41,7 +41,7 @@ export default {
     }
     const body = args[args.length - 1]
     const params = args.slice(0, args.length - 1).map(expr => {
-      if (expr.type != 'word') {
+      if (expr.type !== 'word') {
         throw new SyntaxError('Paramaters must be words')
       }
       return expr.name

@@ -30,7 +30,7 @@ function run (program) {
   return evaluate(parse(program), Object.create(topScope))
 }
 
-const codeToEvaluate = `
+const basicCodeToEvaluate = `
 do(define(total, 0),
 define(count, 1),
 while(<(count, 11),
@@ -39,4 +39,13 @@ define(count, +(count, 1)))),
 print(total))
 `
 
-run(codeToEvaluate)
+const arrayCodeToEvaluate = `
+do(define(myArray, array(1,2,3,4,5)),
+print(myArray),
+print(length(myArray)),
+print(element(myArray, 2))
+)
+`
+
+run(basicCodeToEvaluate)
+run(arrayCodeToEvaluate)
