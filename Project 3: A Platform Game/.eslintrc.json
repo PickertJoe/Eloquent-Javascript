@@ -1,18 +1,15 @@
 {
-    "env": {
-        "browser": true,
-        "es2021": true
-    },
-    "extends": "eslint:recommended",
-    "parserOptions": {
-        "ecmaVersion": 12,
-        "sourceType": "module"
-    },
-    "rules": {
-        "semi" : [2, "never"],
-        "max-len": [2, 120, 2],
-        "arrow-parens": 0,
-        "camelcase": 0,
-        "jsx-quotes": [1, "prefer-single"]
-    }
+	"env": {
+		"browser": true,
+		"es2021": true
+	},
+	"extends": ["airbnb", "prettier"],
+	"plugins": ["prettier"],
+	"parserOptions": {
+		"ecmaVersion": 13,
+		"sourceType": "module"
+	},
+	"rules": {
+		"prettier/prettier": ["error"]
+	}
 }

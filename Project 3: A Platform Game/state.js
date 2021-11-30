@@ -1,15 +1,15 @@
 class State {
-  constructor (level, actors, status) {
-    Object.assign(this, { level, actors, status })
+  constructor(level, actors, status) {
+    Object.assign(this, { level, actors, status });
   }
 
-  static start (level) {
-    return new State(level, level.starActors, 'playing')
+  static start(level) {
+    return new State(level, level.starActors, "playing");
   }
 
-  get player () {
-    return this.actors.find(actor => actor.type === 'player')
+  get player() {
+    return this.actors.find((actor) => actor.type === "player");
   }
 }
 
-export default State
+export default State;
