@@ -1,0 +1,7 @@
+<link rel="stylesheet" href="src/styles/application.css" />
+
+<script>
+  const simpleLevel = new Level(simpleLevelPlan)
+  const display = new DOMDisplay(document.body, simpleLevel)
+  display.syncState(State.start(simpleLevel))
+</script>
