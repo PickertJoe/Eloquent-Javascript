@@ -1,4 +1,5 @@
 import Vec from './vec'
+import levelChars from '../levelChars'
 
 class Level {
   constructor(plan) {
