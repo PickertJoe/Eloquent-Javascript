@@ -1,5 +1,5 @@
 import { element, drawGrid, drawActors } from './helpers'
-import { scale } from './src/constants'
+import { scale } from './constants'
 
 class DOMDisplay {
   constructor(parent, level) {

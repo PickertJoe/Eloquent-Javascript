@@ -1,7 +1,17 @@
-<link rel="stylesheet" href="src/styles/application.css" />
-
-<script>
-  const simpleLevel = new Level(simpleLevelPlan)
-  const display = new DOMDisplay(document.body, simpleLevel)
-  display.syncState(State.start(simpleLevel))
-</script>
+<head>
+  <link rel="stylesheet" href="src/styles/application.css" />
+  <script type="module" src="src/vec.js"></script>
+  <script type="module" src="src/helpers.js"></script>
+  <script type="module" src="src/gameLevels.js"></script>
+  <script type="module" src="src/domDisplay.js"></script>
+  <script type="module" src="src/constants.js"></script>
+  <script type="module" src="src/level.js"></script>
+  <script type="module" src="src/player.js"></script>
+  <script type="module" src="src/lava.js"></script>
+  <script type="module" src="src/state.js"></script>
+</head>
+<body>
+  <script>
+    runGame(GAME_LEVELS, DOMDisplay)
+  </script>
+</body>
